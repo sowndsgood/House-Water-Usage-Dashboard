@@ -64,7 +64,7 @@ st.pyplot(fig_pie)
 
 # Dropdown for selecting a device
 device_names = usage_df['Device Name'].unique()
-selected_device = st.selectbox("**<span style='color:orange;'>Select a device to view its water usage over time:</span>**", device_names)
+selected_device = st.selectbox("Select a device to view its water usage over time:", device_names)
 
 # Plot scatter plot with points joined by lines for the selected device
 st.write(f"### Water Usage Over Time for Device: {selected_device}")
